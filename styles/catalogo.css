@@ -24,8 +24,12 @@ nav li, nav a {
 /* ------------------------------------------------- */
 
 .cat-linha{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17vw, 1fr));
+    gap: 100px; /* Espaçamento entre os itens */
+    justify-items: center;
+
+    
 }
 
 .produto{
@@ -35,10 +39,11 @@ nav li, nav a {
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
-    margin: 2vw calc(5vw - 4px);
+    margin: 2vw 1vw;
     gap: 10px;
     background-color: #645344;
     color: #fff;
+    
 }
 
 .produto img{
@@ -65,5 +70,3 @@ nav li, nav a {
 .produto:hover .descricao{
     display: block;
 }
-
-
