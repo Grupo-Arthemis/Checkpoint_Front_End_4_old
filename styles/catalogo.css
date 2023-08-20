@@ -1,0 +1,69 @@
+
+
+header nav {
+    background-color: #645344;
+    color: #fff;
+    height: 150px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li, nav a {
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ------------------------------------------------- */
+
+.cat-linha{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produto{
+    width: 15vw;
+    border: solid 4px #744926e1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 2vw calc(5vw - 4px);
+    gap: 10px;
+    background-color: #645344;
+    color: #fff;
+}
+
+.produto img{
+    border-radius: 16px;
+    width: 15vw;
+}
+
+.descricao{
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+.produto:hover{
+    background-color: #251d1ddc;
+    color: #fff;
+    height: 30vw;
+}
+
+.produto:not(:hover) {
+    height: 22vw;
+}
+
+.produto:hover .descricao{
+    display: block;
+}
+
+
