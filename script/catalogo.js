@@ -104,7 +104,7 @@ const wineData = [
                             '</div>';
 
         catLinha.innerHTML += novoProduto;
-        wineData.splice(indiceSelecionado, 1); // remove the selected wine from the array
+        wineData.splice(indiceSelecionado, 1); 
     }
     var html = document.documentElement.outerHTML;
     localStorage.setItem('catalogo', html); 
