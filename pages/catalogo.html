@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/catalogo.css">
     <script src="../script/catalogo.js" defer></script>
     <title>Catalogo</title>
@@ -12,7 +11,7 @@
     <header>
         <nav>
             <div class="logo">
-                <h2>logo</h2>
+                <img src="../assets/logo.png" alt="">
             </div>
             <div class="menu">
                 <ul>
@@ -24,11 +23,11 @@
             </div>
             <div class="user">
                 <ul>
-                    <li><a href="carrinho.html">Carrinho</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li class="carrinho">
+                        <a href="carrinho.html"><img src="../assets/carrinho.svg" alt=""></a>
+                        <h1 id="quant-carrinho"></h1>
+                    </li>
                 </ul>
-                <h1>Quant :        </h1>
             </div>
         </nav>
     </header>

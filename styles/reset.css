@@ -1,7 +1,10 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+:root {
+	--bege: #FFEFD8;
+	--vermelho-claro: #810606;
+	--vermelho-medio: #6A0404;
+	--vermelho-escuro: #3B0507;
+
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
