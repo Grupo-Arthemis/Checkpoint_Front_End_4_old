@@ -91,15 +91,19 @@ const wineData = [
         var indiceSelecionado = Math.floor(Math.random() * wineData.length);
         var nomeSelecionado = wineData[indiceSelecionado].name;
         var descricaoSelecionada = wineData[indiceSelecionado].description;
-        var preco = Math.floor(Math.random() * 100) + 1; 
+        var preco = Math.floor(Math.random() * 100) + 30; 
         console.log(quantidade)
         var novoProduto = '<div class="produto">' +
-                            '<img src="../assets/OIG.jpg" alt="">' +
-                            '<h1>' + nomeSelecionado +'</h1>' +
+                            '<img src="../assets/foto.png" alt="Foto do Vinho">' +
+                            '<div>' +
+                            '<div class="nome-vinho">' +
+                            '<h2>' + nomeSelecionado +'</h2>' +
+                            '<i><img src="../assets/corao-off.svg" alt=""></i>' +
+                            '</div>' +
+                            '<p class="preco">R$ ' + preco + ',00</p>' +
                             '<div class="descricao">' +
-                            '<h3>'+ nomeSelecionado + '</h3>' +
+                            '<div class="separacao"></div>' +
                             '<p>' + descricaoSelecionada +'</p>' +
-                            '<p>R$ ' + preco + ',00</p>' +
                             '</div>' +
                             '</div>';
 
@@ -112,16 +116,16 @@ const wineData = [
 
 var selectedCount = 0;
 quant = document.querySelector('.user h1')
-produtoNome = document.querySelectorAll('.produto h1')
+produtoNome = document.querySelectorAll('.produto i')
 produtoNome.forEach(produtoNome => {
     var selected = false; 
     produtoNome.addEventListener('click', function(){
         if (selected) {
-            produtoNome.style.color = 'white'; 
-            selected = false;
-            selectedCount--; 
+          produtoNome.innerHTML = '<img src="../assets/corao-off.svg" alt="">';
+          selected = false;
+          selectedCount--; 
         } else {
-            produtoNome.style.color = 'red'; 
+          produtoNome.innerHTML = '<img src="../assets/corao-on.svg" alt="">';
             selected = true;
             selectedCount++; 
         }

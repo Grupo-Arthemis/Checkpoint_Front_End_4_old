@@ -22,23 +22,21 @@ nav li, nav a {
 }
 
 /* ------------------------------------------------- */
-
 .cat-linha{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(17vw, 1fr));
-    gap: 100px; /* Espaçamento entre os itens */
+    gap: 7%; 
     justify-items: center;
-
-    
 }
 
+/* 
 .produto{
     width: 15vw;
     border: solid 4px #744926e1;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 10%;
     margin: 2vw 1vw;
     gap: 10px;
     background-color: #645344;
@@ -47,7 +45,7 @@ nav li, nav a {
 }
 
 .produto img{
-    border-radius: 16px;
+    border-radius: 10% 10% 2% 2%;
     width: 15vw;
 }
 
@@ -63,8 +61,76 @@ nav li, nav a {
     height: 30vw;
 }
 
+*/
 .produto:not(:hover) {
-    height: 22vw;
+    height: min-content
+}
+
+
+
+/* ------------------------------------------------- */
+
+.produto{
+    width: 300px;
+    border-radius: 22px;
+    border: solid 10px #3B0507;
+    background: #FFEFD8;
+}
+
+.produto > div{
+    background: #810606;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+.produto .nome-vinho{
+    display: flex;
+    padding: 10px 25px 10px 11px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produto h2{
+    color: #FFEFD8;
+    font-family: Bona Nova;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.produto p{
+    color: #FFEFD8;
+    font-family: Bona Nova;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 15px 15px;
+    justify-content: justify;
+}
+
+.produto .preco{
+    color: #FFEFD8;
+    font-family: Bona Nova;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px 11px 20px 15px;
+}
+
+
+.produto .descricao{
+    display: none;
+}
+
+.descricao .separacao{
+    background-color: rgba(255, 239, 216, 0.50);
+    width: 90%;
+    height: 2px;
+    border-radius: 15.402px 15.402px 18px 18px;
+    margin: auto;
 }
 
 .produto:hover .descricao{
