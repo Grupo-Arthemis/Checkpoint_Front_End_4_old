@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/home.css">
-    <title>Home</title>
+    <title>Document</title>
 </head>
 <body>
     <header>
@@ -18,6 +17,8 @@
                     <li><a href="catalogo.html">Catalogo</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="contato.html">Contato</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signin.html">SignIn</a></li>
                 </ul>
             </div>
             <div class="user">
@@ -31,22 +32,21 @@
         </nav>
     </header>
 
-    <main>
-        <section class="section-1">
-            <div class="textos">
-                <h1>Bem-vindo à Vinheria Rochedo!</h1>
-                <p>Somos uma loja especialista em vinhos que oferece uma seleção única de bebidas de qualidade para os apreciadores de vinho.</p>
-                <p>Nós nos dedicamos a fornecer aos nossos clientes uma experiência única de compra de vinhos, trazendo rótulos cuidadosamente selecionados de todo o mundo, desde os clássicos aos mais raros e exclusivos.</p>
-            </div>
-            <div class="anuncio">
-                <img src="../assets/Home-img-1.png" alt="">
-                <a href=""><h1>Conheça a nossa história</h1></a>
-            </div>
-        </section>
-        <section class="section-2">
+    <section class="Section_1">
+        <div class="Textos">
+            <h1>FALE CONOSCO</h1>
+            <img src="../Assets/GIF LOGO (11) 1.svg" alt="Nos de um feedback">
+        </div>
+        <div class="Formulario">
+            <input type="text" placeholder="Nome" id="Nome">
+            <input type="email" placeholder="Email" id="Email">
+            <input type="text" placeholder="Telefone" id="Telefone" oninput="mascaraTelefone()">
+            <input type="text" placeholder="Mensagem" id="Mensagem">
+            <button type="submit" id="Botao">
+                <h2>Enviar</h2>
+            </button>
+        </div>
+    </section>
 
-        </section>
-    </main>
-    <footer></footer>
 </body>
 </html>
