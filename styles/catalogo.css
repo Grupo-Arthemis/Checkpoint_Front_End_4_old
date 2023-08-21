@@ -10,7 +10,6 @@ header nav {
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,15 +42,13 @@ nav ul{
 
 }
 
-
-
-
 /* catalogo--------------------------------------- */
 .cat-linha{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
     justify-content: center;
     gap: 20px;
+    margin-top: 20px;
 }
 .produto:not(:hover) {
     height: min-content;
