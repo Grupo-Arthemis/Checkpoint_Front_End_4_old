@@ -1,0 +1,74 @@
+@import url('./reset.css');
+
+/* header--------------------------------------- */
+header nav {
+    background-color: var(--bege);
+    color: var(--vermelho-escuro);
+    height: 150px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav li, nav a {
+    color: var(--vermelho-escuro);
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img{
+    height: 150px;
+}
+
+.carrinho{
+    position: relative;
+}
+#quant-carrinho{
+    position: absolute;
+    top: 46%;
+    left: 52%;
+    color: var(--bege);
+
+}
+
+/* Main-------------------------------------- */
+
+.section-1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5%;
+    align-items: center;
+    text-align: justify;
+    padding: 2%;
+    background-color: var(--vermelho-claro);
+}
+
+.textos{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    color: var(--bege);
+}
+
+.textos h1{
+    font-size: 68px;
+    font-weight: bolder;
+}
+
+.textos p{
+    font-size: 50px;
+    font-weight: normal;
+}
