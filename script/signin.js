@@ -7,7 +7,7 @@ if (listaUser == null) {
             nomeUsuario : "Admin",
             emailUsuario : "Admin",
             senhaUsuario: "123456",
-            cpfTelefoneUsuario: "12345678901",
+            TelefoneUsuario: "12345678901",
             CodPessoa : "Fisica"
             
         },
@@ -97,7 +97,7 @@ function validarFormulario() {
     
     // Verificando se os campos estão preenchidos e corretos
     if (nome.value === "" | Telefone.value ==="" | email.value === "" || senha.value === "" || confirma.value === "") {
-        alert("Por favor, preencha todos os campos (nome, CPF / Telefone, email, senha e confirmação).");
+        alert("Por favor, preencha todos os campos (nome, Telefone, email, senha e confirmação).");
         return false;
     } else if (!emailRegExp.test(email.value)) {
         alert("Por favor, informe um e-mail válido.");
@@ -229,7 +229,7 @@ document.getElementById("Botao").addEventListener("click", function(event) {
                 nomeUsuario : nome.value,
                 emailUsuario : email.value,
                 senhaUsuario : senha.value,
-                cpfTelefoneUsuario: Telefone.value,
+                TelefoneUsuario: Telefone.value,
                 CodPessoa : tipoPessoa
             };
 

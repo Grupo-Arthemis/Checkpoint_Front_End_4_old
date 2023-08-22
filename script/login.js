@@ -9,7 +9,7 @@ if (listaUser == null) {
             nomeUsuario : "Admin",
             emailUsuario : "Admin",
             senhaUsuario: "123456",
-            cpfCnpjUsuario: "12345678901"
+            TelefoneUsuario: "12345678901"
         },
     ];
     localStorage.setItem("listaUser", JSON.stringify(listaDeUsuarios));
@@ -34,7 +34,7 @@ document.addEventListener("keypress", function(event) {
             listaUser.forEach((usuario) => {
                 if (usuarioValidado.email == usuario.emailUsuario && usuarioValidado.senhaInput == usuario.senhaUsuario) {
                     usuarioValidado["nomeCompleto"] = usuario.nomeUsuario;
-                    usuarioValidado["cpfCnpj"] = usuario.cpfCnpjUsuario;
+                    usuarioValidado["Telefone"] = usuario.TelefoneUsuario;
                     throw "VALIDADO!";
                 }
             });
@@ -46,11 +46,11 @@ document.addEventListener("keypress", function(event) {
                 msgError.setAttribute("style", "color:#F4EFE3;background-color:#618985;display:block;");
                 msgError.innerHTML = "<strong>Usuário validado!</strong>";
                 setTimeout(function() {
-                    window.location.href = "../index.html";
+                    window.location.href = "../home.html";
                 }, 3000);
             } else {
                 msgError.innerHTML = "<strong>Login inválido!</strong>";
-                msgError.setAttribute("style", "color:#F4EFE3;display:block;");
+                msgError.setAttribute("style","color:#F4EFE3;background-color:#990000;display:block;")
             }
         }
     }
@@ -69,7 +69,7 @@ botao.addEventListener("click", ()=>{
             listaUser.forEach((usuario)=>{
                 if(usuarioValidado.email == usuario.emailUsuario && usuarioValidado.senhaInput == usuario.senhaUsuario){
                     usuarioValidado["nomeCompleto"] = usuario.nomeUsuario;
-                    usuarioValidado["cpfCnpj"] = usuario.cpfCnpjUsuario;
+                    usuarioValidado["Telefone"] = usuario.TelefoneUsuario;
                     throw "VALIDADO!";
                 }
             });
@@ -85,11 +85,11 @@ botao.addEventListener("click", ()=>{
                 msgError.innerHTML = "<strong>Bem vindo!</strong>"
 
                 setTimeout(function () {
-                    window.location.href = "../index.html";
+                    window.location.href = "../pages/home.html";
                 }, 3000 );
             }else{
+                msgError.setAttribute("style","color:#F4EFE3;background-color:#990000;display:block;")
                 msgError.innerHTML = "<strong>Login invalido!</strong>";
-                msgError.setAttribute("style","color:#F4EFE3;display:block;");
             }
 
         }
