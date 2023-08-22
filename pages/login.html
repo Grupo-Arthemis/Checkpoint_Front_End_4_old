@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../styles/login.css"> -->
+    <script src="../script/login.js" defer></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="catalogo.html">Catalogo</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signin.html">SignIn</a></li>
+                </ul>
+            </div>
+            <div class="user">
+                <ul>
+                    <li class="carrinho">
+                        <a href="carrinho.html"><img src="../assets/carrinho.svg" alt=""></a>
+                        <h1 id="quant-carrinho"></h1>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="Section_1">
+            <div class="Formulario">
+                <div id="msgError"></div>
+                <input type="email" placeholder="Email" id="Email">
+                <div class="Senha">
+                    <input type="password" placeholder="Senha" id="Senha">
+                    <i class="fa fa-eye-slash eye" aria-hidden="true"></i>
+                </div>
+                <button type="submit" id="Botao">
+                    <h2>Entrar</h2>
+                </button>
+                <br>
+                <a href="signin.html">SignIn</a>
+            </div>
+        </section>
+    
+</body>
+</html>

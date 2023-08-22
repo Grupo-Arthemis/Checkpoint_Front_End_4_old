@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/contato.css">
+    <script src="../script/contato.js" defer></script>
+
+    <!-- Mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="catalogo.html">Catalogo</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signin.html">SignIn</a></li>
+                </ul>
+            </div>
+            <div class="user">
+                <ul>
+                    <li class="carrinho">
+                        <a href="carrinho.html"><img src="../assets/carrinho.svg" alt=""></a>
+                        <h1 id="quant-carrinho"></h1>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="Section_1">
+        <div class="Textos">
+            <h1>FALE CONOSCO</h1>
+        </div>
+        <div class="Formulario">
+            <input type="text" placeholder="Nome" id="Nome">
+            <input type="email" placeholder="Email" id="Email">
+            <input type="text" placeholder="Telefone" id="Telefone" oninput="mascaraTelefone()">
+            <input type="text" placeholder="Mensagem" id="Mensagem">
+            <button type="submit" id="Botao">
+                <h2>Enviar</h2>
+            </button>
+        </div>
+        <div id="map" style="width: 800px; height: 600px;"></div>
+    </section>
+</body>
+</html>
