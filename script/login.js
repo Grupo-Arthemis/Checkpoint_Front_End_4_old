@@ -1,5 +1,7 @@
 "use strict";
 
+// var emailRegExp = /\S+@\S+\.\S{3,}/;
+
 //Verificando se a lista de usuários existe no localStorage
 var listaUser = JSON.parse(localStorage.getItem("listaUser"));
 if (listaUser == null) {
@@ -18,6 +20,22 @@ if (listaUser == null) {
 const botao = document.querySelector("#Botao");
 
 console.log(botao)
+
+
+// email.addEventListener("focus", ()=>{
+//     if (email.value.length < 5){
+//         email.setAttribute("style","outline-color:#ff0000;")}
+// });
+
+// email.addEventListener("keyup", ()=>{
+//     if((email.value.length < 5)||(!emailRegExp.test(email.value))) {
+//         email.setAttribute("style","outline-color:#ff0000;")
+        
+//     }else{
+//         email.setAttribute("style","outline-color:#00ff00;")
+//     }
+// });
+
 
 // Validacao de Login
 document.addEventListener("keypress", function(event) {

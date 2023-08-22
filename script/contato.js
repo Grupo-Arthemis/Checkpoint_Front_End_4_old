@@ -61,3 +61,13 @@ function mascaraTelefone() {
     telefoneInput.value = telefone;
 }
 
+var map = L.map('map').setView([-23.503370, -47.147703], 15);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+L.marker([-23.503370, -47.147703]).addTo(map)
+    .bindPopup("Aqui estou!")
+    .openPopup();
+window.addEventListener('resize', function() {
+    map.invalidateSize();
+});
